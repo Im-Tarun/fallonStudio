@@ -15,7 +15,7 @@ function App() {
   }, [admin])
 
   const getFeedbacks = async () => {
-    const res = await fetch("api/feedbacks")
+    const res = await fetch("https://fallonstudio.onrender.com/api/feedbacks")
     const data = await res.json()
     setallFeedbacks(data.data)
   }

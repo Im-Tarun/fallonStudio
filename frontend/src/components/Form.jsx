@@ -9,7 +9,7 @@ const Form = () => {
 
     const onSubmit = async(feedback) => { 
         console.log(feedback);
-        const response = await fetch("api/submit-feedbacks", {
+        const response = await fetch("https://fallonstudio.onrender.com/api/submit-feedbacks", {
             method : "POST",
             headers:{
                 'Content-Type': "application/json"
